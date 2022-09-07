@@ -21,10 +21,10 @@ class MaxTest {
     @Test
     public void secondMax() {
         int first = 10;
-        int second = 50;
+        int second = 52;
         int third = 1;
         int result = Max.max(first, second, third);
-        int expected = 50;
+        int expected = 52;
         Assert.assertEquals(expected, result);
     }
 
