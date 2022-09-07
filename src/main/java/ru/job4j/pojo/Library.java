@@ -17,7 +17,7 @@ public class Library {
             System.out.println(lib.getName() +  " number of pages " + lib.getPage());
         }
         System.out.println();
-        System.out.println("New List of books swapped places:");
+        System.out.println("New List of books swapped places startOnAnd:");
         Book temp = new Book(null, 0);
         temp = library[0];
         library[0] = library[3];
