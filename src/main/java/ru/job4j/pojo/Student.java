@@ -1,7 +1,6 @@
 package ru.job4j.pojo;
 
 import java.util.Date;
-
 public class Student {
     private String lastnameFirstnamePatronymic;
     private String group;
