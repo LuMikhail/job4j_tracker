@@ -30,7 +30,7 @@ public class Library {
         System.out.println("Find out \"Clean code\"");
         for (int i = 0; i < library.length; i++) {
             Book lib = library[i];
-            if (lib.getName() == "Clean code")  {
+            if (lib.equals(cleanCode))  {
             System.out.println(lib.getName() + " number of pages " + lib.getPage());
             }
             }
