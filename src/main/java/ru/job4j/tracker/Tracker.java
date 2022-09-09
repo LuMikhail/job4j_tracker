@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Tracker {
+
     private final Item[] items = new Item[100];
     private int ids = 1;
     private int size = 0;
