@@ -5,6 +5,6 @@ public class College {
         Freshman koly = new Freshman();
         Student student = koly;
         Object objKoly = koly;
-        System.out.println("Пример повышающего привидения типов");
+        System.out.println("Пример повышающего привидения типов.");
     }
 }
