@@ -1,6 +1,7 @@
 package ru.job4j.interfacepoly;
 
 public class PolyVechicle {
+
     public static void main(String[] args) {
         Vehicle plane = new Plane();
         Vehicle train = new Train();
