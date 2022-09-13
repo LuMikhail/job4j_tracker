@@ -1,4 +1,4 @@
-package ru.job4j.poly.inteface;
+package ru.job4j.interfacepoly;
 
 public interface Vehicle {
     void move();

@@ -1,4 +1,4 @@
-package ru.job4j.poly.inteface;
+package ru.job4j.interfacepoly;
 
 public class Train implements Vehicle {
     @Override
