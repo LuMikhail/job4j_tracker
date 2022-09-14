@@ -44,7 +44,7 @@ public class StartUI {
         Input input = new ConsoleInput();
         Tracker tracker = new Tracker();
         new StartUI().init(input, tracker);
-    }
+        }
 
     public static void createItem(Input input, Tracker tracker) {
         System.out.println("=== Create a new Item ===");
