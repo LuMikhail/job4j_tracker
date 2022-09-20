@@ -1,13 +1,13 @@
 package ru.job4j.strategy;
 
 public class Paint {
-    public void drow(Shape shape) {
-        System.out.println(shape.drow());
+    public void draw(Shape shape) {
+        System.out.println(shape.draw());
     }
 
     public static void main(String[] args) {
         Paint contexst = new Paint();
-        contexst.drow(new Triangle());
-        contexst.drow(new Square());
+        contexst.draw(new Triangle());
+        contexst.draw(new Square());
     }
 }

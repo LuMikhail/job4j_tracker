@@ -2,5 +2,5 @@ package ru.job4j.strategy;
 
 public interface Shape {
 
-    String drow();
+    String draw();
 }
