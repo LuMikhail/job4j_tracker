@@ -1,6 +1,5 @@
 package ru.job4j.tracker;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -41,6 +40,6 @@ class StartUITest {
         };
         StartUI.deleteItem(new StubInput(answers), tracker);
         Item deleted = tracker.findById(item.getId());
-        Assertions.assertNull(deleted);
+        assertThat(deleted).isNull();
     }
 }
