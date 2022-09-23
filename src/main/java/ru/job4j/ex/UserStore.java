@@ -8,9 +8,10 @@ public class UserStore {
             if (user.getUserName().equals(login)) {
                 rsl = user;
                 break;
-            } else {
-                throw new UserNotFoundException("User not found");
+                }
             }
+        if (rsl == null) {
+        throw new UserNotFoundException("User not found");
         }
         return rsl;
     }
@@ -35,5 +36,6 @@ public class UserStore {
         } catch (UserNotFoundException nf) {
             nf.printStackTrace();
         }
+        System.out.println(users);
     }
 }
