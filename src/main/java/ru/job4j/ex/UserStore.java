@@ -36,6 +36,5 @@ public class UserStore {
         } catch (UserNotFoundException nf) {
             nf.printStackTrace();
         }
-        System.out.println(users);
     }
 }
