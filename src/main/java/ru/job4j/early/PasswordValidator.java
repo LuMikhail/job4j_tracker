@@ -34,13 +34,6 @@ public class PasswordValidator {
         return password;
     }
 
-    public static void main(String[] args) throws UserNotFoundException {
-        String rsl = "ПРur2И*ВЕТyРА1н";
-        String rsl2 = "";
-        validate(rsl);
-        validate(rsl2);
-    }
-
     private static boolean findNumber(String str) {
         for (char c : str.toCharArray()) {
             if (Character.isDigit(c)) {
