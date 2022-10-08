@@ -1,11 +1,5 @@
 package ru.job4j.early;
 
-import ru.job4j.ex.UserInvalidException;
-import ru.job4j.ex.UserNotFoundException;
-
-import java.util.Arrays;
-import java.util.Locale;
-
 public class PasswordValidator {
 
     public static String validate(String password) {
@@ -43,23 +37,24 @@ public class PasswordValidator {
         return false;
     }
 
-    private static boolean checkSpecialChars(String rsl) {
-        String specialChars = "\"/*!@#$%^&()\\\"{}_[]|\\\\?/<>,.\";";
-        char currentChar;
-        boolean specialChar = false;
-
-        for (int i = 0; i < rsl.length(); i++) {
-            currentChar = rsl.charAt(i);
-            if (specialChars.contains(String.valueOf(currentChar))) {
-                specialChar = true;
-                break;
+    private static boolean checkSpecialChars(String str) {
+        for (char c : str.toCharArray()) {
+            if (!Character.isDigit(c) && !Character.isLetter(c)) {
+                return true;
             }
         }
-        return specialChar;
+        return false;
     }
 
     private static boolean checkSubstring(String rsl) {
-        return rsl.toLowerCase().contains("qwerty") || rsl.toLowerCase().contains("password") || rsl.contains("12345")
-                || rsl.toLowerCase().contains("admin") || rsl.toLowerCase().contains("user");
+        String[] exceptionSubstring = {"qwerty", "password", "12345", "admin", "user"};
+        boolean notSubstring = false;
+        for (String s : exceptionSubstring) {
+            if (rsl.toLowerCase().contains(s)) {
+                notSubstring = true;
+                break;
+            }
+        }
+        return notSubstring;
     }
 }
