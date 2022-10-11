@@ -8,9 +8,9 @@ public class UsageArrayList {
         names.add("Petr");
         names.add("Ivan");
         names.add("Stepan");
-        for (Object value : names
+        for (Object rsl : names
         ) {
-            System.out.println(value);
+            System.out.println(rsl);
         }
     }
 }
