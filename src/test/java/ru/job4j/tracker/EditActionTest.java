@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class EditActionTest {
 
-    @Test
+ /*   @Test
     public void whenReplaceItemTestOutputIsSuccessfully() {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
@@ -30,5 +30,5 @@ class EditActionTest {
                         + "0. Edit item" + ln
                         + "1. Exit Program" + ln
         );
-    }
+    }*/
 }

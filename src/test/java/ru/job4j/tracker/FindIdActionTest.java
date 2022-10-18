@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class FindIdActionTest {
-    @Test
+ /*   @Test
     public void whenFindIdTestOutputIsSuccessfully() {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
@@ -29,5 +29,5 @@ class FindIdActionTest {
                         + "0. Find item by id" + ln
                         + "1. Exit Program" + ln
         );
-    }
+    }*/
 }
