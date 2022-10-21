@@ -10,7 +10,6 @@ import java.util.TreeSet;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class UserTest {
-
     @Test
     public void whenAsc() {
         Set<User> users = new TreeSet<>();
