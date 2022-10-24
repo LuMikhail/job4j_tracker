@@ -2,7 +2,13 @@ package ru.job4j.collection.bank;
 
 import java.util.Objects;
 
+/**
+ * Класс описывает пользователя банка.
+ */
 public class User {
+    /**
+     * Пользователь банка должен иметь: номер паспорта и ФИО (username).
+     */
     private String passport;
     private String username;
 
