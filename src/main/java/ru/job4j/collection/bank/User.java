@@ -17,18 +17,30 @@ public class User {
         this.username = username;
     }
 
+    /**
+     * @return возвращает паспорт
+     */
     public String getPassport() {
         return passport;
     }
 
+    /**
+     * @param passport изменяет паспорт
+     */
     public void setPassport(String passport) {
         this.passport = passport;
     }
 
+    /**
+     * @return возвращает ФИО
+     */
     public String getUsername() {
         return username;
     }
 
+    /**
+     * @param username изменяет ФИО
+     */
     public void setUsername(String username) {
         this.username = username;
     }

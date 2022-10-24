@@ -17,18 +17,30 @@ public class Account {
         this.balance = balance;
     }
 
+    /**
+     * @return возвращает реквизиты
+     */
     public String getRequisite() {
         return requisite;
     }
 
+    /**
+     * @param requisite изменяет резквизиты
+     */
     public void setRequisite(String requisite) {
         this.requisite = requisite;
     }
 
+    /**
+     * @return возвращает баланс
+     */
     public double getBalance() {
         return balance;
     }
 
+    /**
+     * @param balance изменяет баланс
+     */
     public void setBalance(double balance) {
         this.balance = balance;
     }

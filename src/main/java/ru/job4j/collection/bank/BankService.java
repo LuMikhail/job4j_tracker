@@ -120,6 +120,10 @@ public class BankService {
         return rsl;
     }
 
+    /**
+     * @param user пользователь.
+     * @return возвращает пользователя.
+     */
     public List<Account> getAccounts(User user) {
         return users.get(user);
     }
