@@ -1,35 +1,23 @@
 package ru.job4j.lamda;
 
-import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * Класс сравнивает объекты и сортирует их с использованием лямбда выражений:
- * <p>
- * 1. Сортировка по возрастанию размера.
- * <p>
- * 2. Сортирует строки по возрастанию.
- * <p>
- * 3. Сортирует строки по убыванию длины.
+ * Класс сравнивает строки с использованием лямбда выражений:
+ * <p>  1. Сравнивает строки по возрастанию.
+ *
+ * <p> 2. Сравнивает строки по убыванию длины.
  *
  * @version 1.0
  */
 public class FI {
     public static void main(String[] args) {
-        Attachment[] atts = {
-                new Attachment("image 1.", 20),
-                new Attachment("image 3", 120),
-                new Attachment("image 2", 23)
-        };
-        Comparator<Attachment> comparator = (left, right) -> Integer.compare(left.getSize(), right.getSize());
-        Arrays.sort(atts, comparator);
-        System.out.println(Arrays.toString(atts));
-        Comparator<Attachment> decreaseSort = (left, right) -> left.getName().compareTo(right.getName());
-        Arrays.sort(atts, decreaseSort);
-        System.out.println(Arrays.toString(atts));
-        Comparator<Attachment> decreaseSortLength = (left, right)
-                -> Integer.compare((left.getName().length()), right.getName().length());
-        Arrays.sort(atts, decreaseSortLength);
-        System.out.println(Arrays.toString(atts));
+        String first = "Виноград";
+        String second = "Инвентаризация";
+        Comparator<String> decreaseSort = (left, right) -> left.compareTo(right);
+        System.out.println(decreaseSort.compare(second, first));
+        Comparator<String> decreaseSortLength = (left, right)
+                -> Integer.compare((right.length()), left.length());
+        System.out.println(decreaseSortLength.compare(second, first));
     }
 }
