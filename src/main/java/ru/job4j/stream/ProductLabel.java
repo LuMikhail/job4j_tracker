@@ -4,7 +4,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Класс генерировать ярлыки для продуктов со скидкой
+ * Класс генерировать ярлыки для продуктов со скидкой.
+ *
+ * @version 1.0
  */
 public class ProductLabel {
 
@@ -13,10 +15,9 @@ public class ProductLabel {
      * <p>1. Фильтруем продукты если срок годности заканчивается через три дня.</p>
      * <p>2. Переносим отфильтрованные продукты в класс типа Label с уменьшением их прайсовой цены на 50%.</p>
      * <p>3. Создаем список продуктов типа String со скидкой.</p>
-     * @param products входящие данные из класса Product
-     * @return возвращает продукты со скидкой из класса Label в виде строки.
      *
-     * @version 1.0
+     * @param products входящие данные из класса Product
+     * @return возвращает продукты со скидкой из класса Label в виде строки.*
      */
     public List<String> generateLabels(List<Product> products) {
         List<String> result = products.stream()
