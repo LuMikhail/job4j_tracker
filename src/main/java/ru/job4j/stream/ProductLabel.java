@@ -24,7 +24,7 @@ public class ProductLabel {
                 .filter(f -> f.getActual() <= f.getStandard())
                 .filter(f -> f.getStandard() - f.getActual() < 4)
                 .map(f -> new Label(f.getName(), f.getPrice() * 50 / 100))
-                .map(f -> f.getName() + " " + f.getPrice())
+                .map(Label::toString)
                 .collect(Collectors.toList());
         return result;
     }
