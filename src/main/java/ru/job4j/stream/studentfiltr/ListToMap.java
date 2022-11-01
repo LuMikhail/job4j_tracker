@@ -10,9 +10,8 @@ import java.util.stream.Collectors;
  * @version 1.0
  */
 public class ListToMap {
-
     public static Map<String, Student> convert(List<Student> list) {
         return list.stream()
-                .collect(Collectors.toMap(Student::getSurname, Function.identity(), ((student, student2) -> student)));
+                .collect(Collectors.toMap(Student::getSurname, Function.identity(), (student, student2) -> student));
     }
 }
