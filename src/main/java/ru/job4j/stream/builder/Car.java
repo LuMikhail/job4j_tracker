@@ -18,6 +18,9 @@ public class Car {
 
     private String color;
 
+    /**
+     * Статический вложенный класс.  Заменяет конструктор с большим количеством параметров.
+     */
     static class Builder {
         private String brand;
         private String model;
@@ -50,6 +53,10 @@ public class Car {
             return this;
         }
 
+        /**
+         * Метод, который сознает готовый объект.
+         * @return возвращает экземпляр класса Car.
+         */
         Car build() {
             Car car = new Car();
             car.brand = brand;
